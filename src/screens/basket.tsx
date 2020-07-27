@@ -25,7 +25,7 @@ function Basket(props:any) {
           {props.products.map((v:propsOzel)=>{
             return <Grid item xs={12} key={v.id} justify="center" alignItems="center" className="sepetDiv" container>
               <Grid item xs={2}>
-                <img src={`http://www.mycampaigntech.com/marketburada/api/service/data/${v.resim}`} className="sepetResim" alt="urunResim" />
+                <img src={`https://www.topraam.com.tr/marketburada/api/service/data/${v.resim}`} className="sepetResim" alt="urunResim" />
               </Grid>
               <Grid item xs={3} justify="center" alignItems="center" container>
                 <p className="urunAdi">{v.isim}</p>

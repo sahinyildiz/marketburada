@@ -22,7 +22,7 @@ function Producs(props:any) {
   const urunleriCek = ()=>{
     axios({
       method: 'POST',
-      url: 'http://www.mycampaigntech.com/marketburada/api/service/service.php',
+      url: 'https://www.topraam.com.tr/marketburada/api/service/service.php',
       data: {urunlericek:"1"},
       headers: {'Content-Type': 'multipart/form-data' }
     })
@@ -48,7 +48,7 @@ function Producs(props:any) {
           veriler.map((v:propsOzel)=>{
             return <Grid item xs={6} key={v.id} sm={2} justify="center" alignItems="center" container>
               <div className="urunDiv">
-                <img src={`http://www.mycampaigntech.com/marketburada/api/service/data/${v.resim}`} className="urunResim" alt="urunResim" />
+                <img src={`https://www.topraam.com.tr/marketburada/api/service/data/${v.resim}`} className="urunResim" alt="urunResim" />
                 <p className="urunAdi">{v.isim}</p>
                 <p>{v.fiyat} TL</p>
                 {props.products.findIndex((obj:finIxdes) => obj.id===v.id) > -1 ? <Button variant="contained" className="sepeteEklebtneklendi">Eklendi</Button>:

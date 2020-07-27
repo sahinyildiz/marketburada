@@ -14,7 +14,7 @@ const Login = () => {
     data.girisyap=true;
     axios({
       method: 'POST',
-      url: 'http://www.mycampaigntech.com/marketburada/api/service/service.php',
+      url: 'https://www.topraam.com.tr/marketburada/api/service/service.php',
       data: data,
       headers: {'Content-Type': 'multipart/form-data' }
     })
