@@ -1,0 +1,152 @@
+.home {
+  text-align: center;
+}
+.home-Butonlar {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-Butonlar a{
+  background-color: white;
+  border: 1px solid #FFBF46;
+  width: 300px;
+  margin-bottom: 20px;
+  color:#000;
+  padding: 8px 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.home-Butonlar a:hover{
+  background-color: #FFBF46;
+  border: 1px solid #FFBF46;
+}
+.girisYap{
+  text-align: center;
+}
+.girisForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.girisForm .input{
+  height: 32px;
+  width: 100%;
+  margin-bottom: 10px;
+  max-width: 320px;
+}
+.girisForm .btnsubmit{
+  width: 100%;
+  max-width:328px;
+  border:1px solid #FFBF46;
+  color: #000;
+  padding: 12px 0px;
+  font-weight: bold;
+  background-color: #FFF
+}
+.girisForm .btnsubmit:hover{
+  border:1px solid #FFBF46;
+  background-color: #FFBF46
+}
+.girisForm .btnsubmit:focus{
+  outline: none;
+}
+.alertOzel{
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 298px;
+  padding: 3px 16px;
+}
+.hide{
+  display: none;
+}
+.menu{
+  max-width: 30px;
+}
+.textCenter{
+  text-align: center;
+}
+.header{
+  padding: 8px 14px;
+  -webkit-box-shadow: 0px 4px 20px -7px rgba(87,87,87,1);
+  -moz-box-shadow: 0px 4px 20px -7px rgba(87,87,87,1);
+  box-shadow: 0px 4px 20px -7px rgba(87,87,87,1);
+}
+.sideMenu{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+.sideMenu button
+{
+  width: 250px;
+  padding: 15px 0px;
+  text-decoration: none;
+  margin: 0px;
+  text-align: left !important;
+  text-transform: none !important;
+}
+.sideMenu button:hover
+{
+  background-color: #FFBF46;
+  color:#FFF
+}
+.MuiGrid-spacing-xs-3{
+  width: auto !important;
+  margin: 0px !important;
+}
+.urunler{
+  flexGrow: 1;
+  margin-top: 20px;
+}
+.urunResim{
+  max-width: 75px
+}
+.urunDiv{
+  width: 170px;
+  text-align: center;
+  padding: 10px 0px;
+  -webkit-box-shadow: 0px 4px 12px -7px rgba(87,87,87,1);
+  -moz-box-shadow: 0px 4px 12px -7px rgba(87,87,87,1);
+  box-shadow: 0px 4px 12px -7px rgba(87,87,87,1);
+}
+.urunAdi{
+  font-size: 16px;
+  font-weight: bold;
+}
+.sepeteEklebtn{
+  background-color: #FFBF46 !important;
+}
+.sepeteEklebtneklendi{
+  background-color: #008000 !important;
+  color: #FFF !important;
+  width: 132px;
+}
+.sepetDiv{
+  box-shadow: 0px 20px 20px -32px rgba(87,87,87,1);
+}
+.sepetResim{
+  max-width: 30px;
+}
+.sepetAnaDiv{
+  margin-top: 20px !important;
+}
+.sepetbos{
+  width: 100%;
+  text-align: center;
+}
+.toplamtutar{
+  width: 100%;
+  text-align: center;
+  background-color: #FFBF46;
+  margin: 0px;
+  margin-top: 15px;
+  padding: 15px 0px 15px 0px;
+}
+.bold{
+  font-weight: bold;
+}
