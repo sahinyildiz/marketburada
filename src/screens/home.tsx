@@ -2,13 +2,16 @@ import React, {useEffect } from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom';
 const Home = (props : any )=> {
-  useEffect(() => {
+  const loginControl = () =>{
     if(localStorage.getItem("id"))
     {
-      props.history.push('/anasayfa');
+      props.history.push('/homepage');
       return
     }
-  },[]);
+  }
+  useEffect(() => {
+    loginControl();
+  });
   return (
     <div className="home">
       <h2>Market Burada'ya Hoşgeldiniz</h2>

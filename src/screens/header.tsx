@@ -32,6 +32,9 @@ const Header = (props:any)=>  {
     }
     setDialog(false);
   };
+  const homepagebtn = () => {
+    props.history.push('/homepage');
+  }
   return (
     <Grid item xs={12} className="header" container direction="row">
       <Grid item xs={3} container alignItems="center">
@@ -49,6 +52,9 @@ const Header = (props:any)=>  {
           onClose={handleDrawerClose}
         >
           <div className="sideMenu">
+          <Button onClick={homepagebtn}>
+            Anasayfa
+          </Button>
           <Button onClick={handleClickOpen}>
             Çıkış Yap
           </Button>
@@ -80,7 +86,7 @@ const Header = (props:any)=>  {
         <img src={require("./images/logo.png")} className="logo" alt="Logo" />
       </Grid>
       <Grid item xs={3} justify="flex-end" alignItems="center" container className="textCenter">
-        <Link to="/sepetim">
+        <Link to="/basket">
           <img src={require("./images/sepet.png")} className="menu" alt="Logo" />
         </Link>
       </Grid>

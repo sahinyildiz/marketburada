@@ -3,21 +3,21 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import '../App.css';
 import Register from '../screens/register';
 import Login from '../screens/login';
-import Anasayfa from '../screens/anasayfa';
+import Homepage from '../screens/homepage';
 import Home from '../screens/home';
-import Sepetim from '../screens/sepetim';
+import Basket from '../screens/basket';
 
-function App() {
+const RouterApp = () => {
   return (
     <Router>
       <div className="App">
           <Route path="/" exact component={Home}/>
           <Route path="/Login" exact component={Login}/>
           <Route path="/Register" exact component={Register}/>
-          <Route path="/Anasayfa" exact component={Anasayfa}/>
-          <Route path="/Sepetim" exact component={Sepetim}/>
+          <Route path="/Homepage" exact component={Homepage}/>
+          <Route path="/Basket" exact component={Basket}/>
       </div>
     </Router>
   );
 }
-export default App;
+export default RouterApp;

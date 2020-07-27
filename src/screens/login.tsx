@@ -5,7 +5,7 @@ import axios from 'axios';
 import '../App.css';
 import { Alert } from '@material-ui/lab';
 
-function Login() {
+const Login = () => {
   let history = useHistory();
   const { register, handleSubmit } = useForm();
   const [sonuc, setSonuc] = useState({result: null,message:""});
@@ -23,7 +23,7 @@ function Login() {
       if (data.result===1) {
         localStorage.setItem('id', data.id);
         setTimeout(()=>{
-          history.push("/anasayfa");
+          history.push("/homepage");
         },2000)
       }
     })

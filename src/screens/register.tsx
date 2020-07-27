@@ -5,7 +5,7 @@ import axios from 'axios';
 import '../App.css';
 import { Alert } from '@material-ui/lab';
 
-function Register() {
+const Register = () => {
   let history = useHistory();
   const { register, handleSubmit } = useForm();
   const [sonuc, setSonuc] = useState({result: null,message:""});
